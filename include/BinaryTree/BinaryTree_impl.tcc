@@ -8,10 +8,10 @@ BinaryTree<T>::BinaryTree(){
 
 template <class T>
 void deleteTree(Node<T> * node){
-        if(node == nullptr)return;
-        deleteTree(node->left);
-        deleteTree(node->right);
-        delete node;
+    if(node == nullptr)return;
+    deleteTree(node->left);
+    deleteTree(node->right);
+    delete node;
 }
 
 template <class T>

@@ -40,14 +40,14 @@ void DoubleLinkedList<T>::insertFront(T val){
 
 template <class T>
 void DoubleLinkedList<T>::insertEnd(T val){
-        if(head == nullptr){
-                head = new doubleNode<T>;
-                head->val = val;
-                head->next = nullptr;
-                head->previous = nullptr;
+    if(head == nullptr){
+        head = new doubleNode<T>;
+        head->val = val;
+        head->next = nullptr;
+        head->previous = nullptr;
 		tail=head;
-                return;
-        }
+        return;
+    }
 	doubleNode<T> * newNode = new doubleNode<T>;
 	newNode->val = val;
 	newNode->next = nullptr;
@@ -79,14 +79,14 @@ void DoubleLinkedList<T>::insertVal(T val, int index){
 	}
 	for(int i = 0; tempH; i++){
 		if(i == index){
-                        T tempT = tempH->val;
-                        tempH->val = temp->val;
-                        temp->val = tempT;
-                        temp->next = tempH->next;
-                        tempH->next = temp;
+            T tempT = tempH->val;
+            tempH->val = temp->val;
+            temp->val = tempT;
+            temp->next = tempH->next;
+            tempH->next = temp;
 
 			//temp->previous = tempH;
-                        return;
+            return;
 		}
 		tempH = tempH->next;
 
@@ -140,7 +140,7 @@ doubleNode<T>* DoubleLinkedList<T>::get(int index){
 	doubleNode<T>* temp = head;
 	for(int i = 0; temp; i++, temp=temp->next){
 		if(i == index){
-                        std::cout<<"here"<<std::endl;
+            std::cout<<"here"<<std::endl;
 			return temp;
 		}
 	}

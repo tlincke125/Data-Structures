@@ -1,5 +1,5 @@
 /****************************************************************/
-/*                         Queue				*/
+/*             Queue				*/
 /****************************************************************/
 /**
     CS-11 ASCI Standard 2, LinkedList.hpp
@@ -17,18 +17,18 @@ struct singleNode{
 
 template <typename T>
 class LLCircularQueue{
-        public:
-                Queue();
-                ~Queue();
+    public:
+        Queue();
+        ~Queue();
 
-                void enqueue(T val);
-                void dequeue(T val);
-                bool isEmpty();
+        void enqueue(T val);
+        void dequeue(T val);
+        bool isEmpty();
 		void shift(int index);
-                T peek();
+        T peek();
 
-        private:
-                doubleNode<T> * head;
+    private:
+        doubleNode<T> * head;
 		doubleNode<T> * tail;
 };
 
