@@ -1,0 +1,3 @@
+/home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles/rebuild_cache.dir
+/home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles/run.dir
+/home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles/edit_cache.dir
