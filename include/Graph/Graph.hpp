@@ -1,28 +1,29 @@
 #include <vector>
 #include <iostream>
 
-
+using std::vector
 template <class T>
-struct vertice{
-
-
-	vector<T> key;
+struct adjVertex{
+	vertex *v;
 }
 
+template <class T>
+struct vertex{
+    T val;
+    bool visited;
+    std::vector<adjVertex> adj;
+}
 
 template <class T>
 class Graph{
-	public:
-		Graph(int size);
-		friend ostream& operator <<(ostream& os, Graph& g){
-			for(int i = 0; i < sizel i++){
-				std::cout<<graph[i]<< " "<<std::endl;
-			}
-		}
+    public:
+        Graph();
+        ~Graph();
+        void addEdge(T val1, T val2);
+        void addVertex(T val);
+        void displayEdges();
+        void breadthFirstTraverse(T sourceVertex);
 
-
-
-	private:
-		vector<T> graph;
-		int size;
+    private:
+        vector<vertex> vertices;
 }

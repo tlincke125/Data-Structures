@@ -11,20 +11,24 @@
 
 
 template <typename T>
-class MinHeap{
+class Heap{
 	public:
-		MinHeap(int queueSize);
+		Heap(int queueSize, bool Min);
+        Heap(int size, int queueSize, T * arr, bool Min);
+//        ~Heap();
+        
 		int parent(int index);
 		int leftChild(int index);
 		int rightChild(int index);
 
-		T getMin();
+		T getMinMax();
 		void heapify(int index);
-		T extractMin();
+		T extractMinMax();
 		void insertElement(T val);
 		void print();
 		void deleteKey(T val);
 	private:
+        bool min;
 		T * heapArr;
 		int capacity;
 		int currentSize;

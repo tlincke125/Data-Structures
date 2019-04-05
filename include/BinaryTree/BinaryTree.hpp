@@ -9,7 +9,7 @@
     @version 1.1 01/02/19 
 */
 
-template <typename T>
+template <class T>
 struct Node{
 	T val;
 
@@ -17,11 +17,12 @@ struct Node{
 	Node * right;
 };
 
-template <typename T>
+template <class T>
 class BinaryTree{
 	public:
 		BinaryTree();
-		~BinaryTree();
+		BinaryTree(int size, T * arr);
+        ~BinaryTree();
 
 		void print();
 		//you must have an opperator initialized for T
@@ -29,9 +30,12 @@ class BinaryTree{
 		void addNode(T val);
 		void findNode(T val);
 		void deleteNode(T val);
+        
 	private:
 		Node<T> * root;
 		Node<T> * search(T val);
 };
+BinaryTree<int> builtIntTree(int * arr);
+BinaryTree<char*> buildStringTree(int * arr);
 
 #include "BinaryTree_impl.tcc"

@@ -7,6 +7,17 @@ BinaryTree<T>::BinaryTree(){
 }
 
 template <class T>
+BinaryTree<T>::BinaryTree(int size, T * arr)
+{
+    root = nullptr;
+    for(int i = 0; i < size; i++)    
+    {
+        addNode(arr[i]);
+    }
+}
+
+
+template <class T>
 void deleteTree(Node<T> * node){
     if(node == nullptr)return;
     deleteTree(node->left);
@@ -133,3 +144,13 @@ template <class T>
 Node<T> * BinaryTree<T>::search(T val){
 	return helperSearch(root, val);	
 }
+
+
+
+
+
+
+
+
+
+

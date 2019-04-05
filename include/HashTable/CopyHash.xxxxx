@@ -1,0 +1,26 @@
+#include <vector>
+#include <iostream>
+using std::vector
+
+template <typename K, typename T>
+struct Node{
+    K key;
+    T val;   
+};
+
+template <typename K, typename T>
+class HashMap{
+    public:
+        HashMap(int size);
+        HashMap(T * vals, K * keys, int size, int maxSize);
+        ~HashMap();
+        
+        bool get();
+        void put();
+        void remove();
+    
+    private:       
+        vector<Node<K, T>> table;
+        int TableSize;
+        unsigned long operator()(const K&) const{return reinterpret_cast<unsigned long>(key) % TableSize;}
+};        

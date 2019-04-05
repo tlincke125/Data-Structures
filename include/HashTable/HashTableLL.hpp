@@ -8,24 +8,30 @@
     @author Theo Lincke
     @version 1.1 01/02/19 
 */
+template <class T>
+struct nodeData{
+    char * hashKey;
+    T val;
+};
 
 template <class T>
 struct Node{
-	char ** hashKey;
-	T val;
+    nodeData<T> val;
 	Node * next;
 };
 
 template <class T>
 class HashTable{
 	public:
-		HashTable();
+		HashTable(int size);
+        HashTable(int size, int number, T * arr, char ** arrChar);
 		~HashTable();
+
 
 		void print();
 		void printTopN(int n);
 
-		void addVal(T val);
+		void addVal(T val, char * hashKey);
 		bool isInTable(T val);
 
 		int getNumCollisions();
@@ -35,11 +41,12 @@ class HashTable{
 
 	private:
 
-		unsigned int getHash(T val);
-		Node * searchTable(T val);
+		unsigned int getHash(char * val);
+		Node<T> * searchTable(T val);
 
 		Node<T> ** hashTable;
 		int size;
 		int numItems;
 		int numCollisions;
 };
+#include "HashTableLL_impl.tcc"
