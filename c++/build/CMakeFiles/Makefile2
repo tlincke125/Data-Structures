@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/theo/Documents/school/dataStruct/DataStructures/src
+CMAKE_SOURCE_DIR = /home/theo/Documents/school/dataStruct/DataStructures/c++/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/theo/Documents/school/dataStruct/DataStructures/bin
+CMAKE_BINARY_DIR = /home/theo/Documents/school/dataStruct/DataStructures/c++/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/run.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/theo/Documents/school/dataStruct/DataStructures/bin
 CMakeFiles/run.dir/all:
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/depend
 	$(MAKE) -f CMakeFiles/run.dir/build.make CMakeFiles/run.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles --progress-num=1,2 "Built target run"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/theo/Documents/school/dataStruct/DataStructures/c++/build/CMakeFiles --progress-num=1,2 "Built target run"
 .PHONY : CMakeFiles/run.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/run.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/run.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theo/Documents/school/dataStruct/DataStructures/c++/build/CMakeFiles 2
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/run.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/theo/Documents/school/dataStruct/DataStructures/bin/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/theo/Documents/school/dataStruct/DataStructures/c++/build/CMakeFiles 0
 .PHONY : CMakeFiles/run.dir/rule
 
 # Convenience name for target.

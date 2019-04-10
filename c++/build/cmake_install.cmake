@@ -1,4 +1,4 @@
-# Install script for directory: /home/theo/Documents/school/dataStruct/DataStructures/src
+# Install script for directory: /home/theo/Documents/school/dataStruct/DataStructures/c++/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/theo/Documents/school/dataStruct/DataStructures/bin/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/theo/Documents/school/dataStruct/DataStructures/c++/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

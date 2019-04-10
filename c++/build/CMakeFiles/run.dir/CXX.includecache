@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/theo/Documents/school/dataStruct/DataStructures/c++/src/../include/Heap/Heap.hpp
+Heap_impl.tcc
+/home/theo/Documents/school/dataStruct/DataStructures/c++/src/../include/Heap/Heap_impl.tcc
+
+/home/theo/Documents/school/dataStruct/DataStructures/c++/src/../include/Heap/Heap_impl.tcc
+
+/home/theo/Documents/school/dataStruct/DataStructures/c++/src/main.cpp
+iostream
+-
+Heap/Heap.hpp
+/home/theo/Documents/school/dataStruct/DataStructures/c++/src/Heap/Heap.hpp
+
